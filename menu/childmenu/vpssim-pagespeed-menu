@@ -1,0 +1,24 @@
+#!/bin/sh 
+curTime=$(date +%s)
+checktruenumber='^[0-9]+$'
+if [ ! -d /etc/vpssim/.tmp ]; then
+mkdir-p /etc/vpssim/.tmp
+fi
+if [ ! -f /usr/bin/xinputxza ]; then
+rm -rf /etc/vpssim/.tmp/checkallwebsites
+ls /etc/nginx/conf.d > /etc/vpssim/.tmp/checkallwebsites
+sowebsite=$(cat /etc/vpssim/.tmp/checkallwebsites | wc -l)
+if [ "$(cat /etc/vpssim/.tmp/checkallwebsites | wc -l)" -gt "1" ]; then
+if [ ! -f /etc/vpssim/.tmp/xzx ]; then
+touch -a -m -t 201602180130.09 /etc/vpssim/.tmp/xzx 
+fi
+fileTime2=$(date -r /etc/vpssim/.tmp/xzx +%s);diff=$(($curTime-$fileTime2))
+if [ "$diff" -gt 1800 ]; then
+touch /etc/vpssim/.tmp/xzx
+clear
+fi
+fi
+fi
+clear && /etc/vpssim/menu/pagespeed/vpssim-pagespeed-menu
+
+
