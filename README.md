@@ -46,19 +46,21 @@ Lưu ý: Bản cài đặt này chỉ Fix lỗitrong quá trình cài đặt, c�
 ```
 strings /usr/lib64/libstdc++.so.6 | grep GLIBC
 strings /usr/lib64/libstdc++.so.6|grep CXXABI
+```
 
 if not found CXXABI_1.3.9，update libstdc++.so.6
 
 download libstdc++.so.6.0.26 (https://cdn.frostbelt.cn/software/libstdc%2B%2B.so.6.0.26)，
 
 copy to /usr/lib64/, and :
-
+```
 cd /usr/lib64/
 ln -snf ./libstdc++.so.6.0.26 libstdc++.so.6
+```
 
 Error: /lib64/libc.so.6: version `GLIBC_2.18' not found
 install GLIBC_2.18:
-
+```
 curl -O http://ftp.gnu.org/gnu/glibc/glibc-2.18.tar.gz
 tar zxf glibc-2.18.tar.gz
 cd glibc-2.18/
@@ -67,10 +69,11 @@ cd build/
 ../configure --prefix=/usr
 make -j2
 make install
-
 ```
 
 - Fix lỗi mysql ko thể khởi động ```cant connect to local msql server through socket var/lib/mysql/mysql.sock```
+Check lỗi
+```systemctl status mariadb```
 
 Chạy lệnh
 ```mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql ```
