@@ -177,7 +177,7 @@ exit
 fi  
 
 prompt="Nhap lua chon cua ban: "
-options=( "MariaDB 10.5")
+options=( "MariaDB 11.3")
 echo "=========================================================================="
 echo "Lua Chon Cai Dat Phien Ban MariaDB  "
 echo "=========================================================================="
@@ -185,13 +185,13 @@ PS3="$prompt"
 select opt in "${options[@]}"; do 
 
     case "$REPLY" in
-    1) mariadbversion="10.5"; break;;
+    1) mariadbversion="11.3"; break;;
             
     *) echo "Ban nhap sai ! Ban vui long chon so trong danh sach";continue;;
     esac  
 done
-if [ "$mariadbversion" = "10.5" ]; then
-phienbanmariadb=10.5
+if [ "$mariadbversion" = "11.3" ]; then
+phienbanmariadb=11.3
 fi
 arch=`uname -m`
 if [ "$(rpm -qf --queryformat="%{VERSION}" /etc/redhat-release)" == "6" ]; then 
