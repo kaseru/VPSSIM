@@ -551,9 +551,6 @@ fi
 chmod +x /etc/init.d/nginx
 chmod +x /usr/sbin/nginx
 #########################################################################
-## Dem luot cai dat VPSSIM neu cai dat thanh cong - VPSSIM setup count: 
-/etc/vpssim/menu/inc/vpssim-dem-luot-cai-dat-setup-count
-#########################################################################
 # Download /etc/nginx/conf
 cp -avr /etc/vpssim/menu/inc/conf/ /etc/nginx
 #unzip /etc/vpssim/menu/inc/conf.zip -d /etc/nginx/
