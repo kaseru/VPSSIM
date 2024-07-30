@@ -50,7 +50,7 @@ strings /usr/lib64/libstdc++.so.6|grep CXXABI
 
 if not found CXXABI_1.3.9，update libstdc++.so.6
 
-download libstdc++.so.6.0.26 (https://cdn.frostbelt.cn/software/libstdc%2B%2B.so.6.0.26)，
+download libstdc++.so.6.0.26 (  https://cdn.frostbelt.cn/software/libstdc%2B%2B.so.6.0.26  )，
 
 copy to /usr/lib64/, and :
 ```
