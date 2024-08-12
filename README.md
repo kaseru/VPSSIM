@@ -83,3 +83,19 @@ Sau đó start
 
 Chạy khi khơi động
 ```systemctl enable mariadb```
+
+
+## Nâng cấp gcc-8
+```
+yum install gcc-c++
+yum install cmake
+yum install centos-release-scl
+yum install devtoolset-8-gcc devtoolset-8-gcc-c++
+scl enable devtoolset-8 -- bash
+```
+
+- Kích hoạt mặc định gcc-8 
+Thêm vào .bashrc
+```
+export PATH=/opt/rh/devtoolset-8/root/usr/bin:$PATH
+```
