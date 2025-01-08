@@ -19,6 +19,7 @@ bash <( curl -k https://raw.githubusercontent.com/kaseru/VPSSIM/master/vpssim_fi
 Lưu ý: Bản cài đặt này chỉ Fix lỗitrong quá trình cài đặt, còn lại các thành phần của VPSSIM không thay đổi. Việc nhập được KEY hay không phụ thuộc vào bên vpssim.
 
 ## Cài đặt thủ công
+- Chạy file này trước để cài một số lib cần thiết ```bash <( curl -k https://raw.githubusercontent.com/kaseru/VPSSIM/master/vpssim_fix )```
 - Copy menu.zip to ```/etc/vpssim/```
 - Copy file centos7/vpssim-setup to ```/etc/vpssim/.tmp/vpssim-setup```
 - Chmod ```chmod +x /etc/vpssim/.tmp/vpssim-setup ```
