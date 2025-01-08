@@ -45,7 +45,7 @@ add_index_html(){
 cat > "/home/$website/public_html/index.html" <<END
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
-		<title>Them $website vao server bang VPSSIM thanh cong !</title>
+		<title>$website!</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style type="text/css">
 			/*<![CDATA[*/
@@ -74,7 +74,7 @@ cat > "/home/$website/public_html/index.html" <<END
 		</style>
 	</head>
 	<body>
-		<h1><strong>Them $website vao server bang <a href="https://hostingaz.vn/3455-cai-dat-nginx-mariadb-php-fpm-lemp-toi-uu-bao-mat-vps-centos-vpssim.html" title="Cai dat VPSSIM, huong dan cai dat VPSSIM tren VPS server" > VPSSIM</a> thanh cong !</strong></h1>
+		<h1><strong>Wellcome $website !</strong></h1>
 			</body>
 </html>
 END
